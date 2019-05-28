@@ -2,5 +2,5 @@
 
 function printString(string) {
   console.log(string);
-  
+
 }
