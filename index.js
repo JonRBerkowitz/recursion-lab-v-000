@@ -52,3 +52,7 @@ function maxOf(ary) {
     return ary[0]
   }
 }
+
+function includesNumber(ary, num) {
+  
+}
