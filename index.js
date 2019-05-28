@@ -40,3 +40,15 @@ function addUpTo(ary, i) {
     return ary[0]
   }
 }
+
+function maxOf(ary) {
+  if (ary.length > 1) {
+    if (ary[0] > ary[1]) {
+      return maxOf(ary.filter(num => num !== ary[1]))
+    } else {
+      return maxOf(ary.filter(num => num !== ary[0]))
+    }
+  } else {
+    return ary[0]
+  }
+}
