@@ -31,5 +31,12 @@ function isPalindrome(str) {
   } else {
     return true;
   }
+}
 
+function addUpTo(num) {
+  if (num > 1) {
+    return addUpTo(num - 1) + num;
+  } else {
+    return 1;
+  }
 }
