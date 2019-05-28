@@ -33,10 +33,10 @@ function isPalindrome(str) {
   }
 }
 
-function addUpTo(num) {
-  if (num > 1) {
-    return addUpTo(num - 1) + num;
+function addUpTo(ary, i) {
+  if (i > 0) {
+    return ary[i] + addUpTo(ary, i - 1)
   } else {
-    return 1;
+    return ary[0]
   }
 }
