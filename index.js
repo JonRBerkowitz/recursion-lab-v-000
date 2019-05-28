@@ -13,7 +13,7 @@ function printString(string) {
 
 function reverseString(string) {
 
-  if (string.length > 1) {
+  if (string.length >= 1) {
     return string[string.length - 1] + reverseString(string.substring(0,string.length - 1))
 
   } else {
