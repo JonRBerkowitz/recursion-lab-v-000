@@ -58,7 +58,7 @@ function includesNumber(ary, num) {
     if (ary[0] === num) {
       return true;
     } else {
-      return includesNumber(ary.slice(1, s.length))
+      return includesNumber(ary.slice(1, ary.length), num)
     }
   } else {
     return false;
