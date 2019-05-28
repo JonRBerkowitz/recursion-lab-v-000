@@ -21,7 +21,15 @@ function reverseString(string) {
 }
 
 function isPalindrome(str) {
-  let pal = (reverseString(str) === str)
 
-  return !!pal
+  if (str.length > 1) {
+    if (str[0] === str[length - 1]) {
+      isPalindrome(str.substring(1, str.length - 1))
+    } else {
+      return false
+    }
+  } else {
+    return true;
+  }
+  
 }
