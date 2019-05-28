@@ -18,5 +18,10 @@ function reverseString(string) {
   } else {
     return "";
   }
+}
 
+function isPalindrome(str) {
+  let pal = (reverseString(str) === str)
+
+  return !!pal
 }
